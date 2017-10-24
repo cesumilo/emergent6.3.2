@@ -15,14 +15,13 @@ if [ -z $1 ]; then
     print_err "Usage:\n\t./fix_emergent_install.sh [bash/zsh/whatever]rc"
 fi
 
-BASHRC=$1
+BASHRC_PATH=$1
 FIX_INSTALL_DIR=~/.bin
 
 mkdir -p $FIX_INSTALL_DIR/emergent6.3.2
 check_err "Impossible to create the fix installation directories."
 
-echo "export PATH=$FIX_INSTALL_DIR:$PATH" >> $BASHRC
-check_err "Impossible to add the fix installation path in the PATH environment variable."
+echo "export PATH=$FIX_INSTALL_DIR:$PATH" >> $BASHRC_PATH
 
 mv /usr/local/bin/emergent $FIX_INSTALL_DIR/emergent6.3.2
 check_err "Impossible to move the emergent binary file in the fix installation directory."
