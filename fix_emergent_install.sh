@@ -21,7 +21,9 @@ FIX_INSTALL_DIR=~/.bin
 mkdir -p $FIX_INSTALL_DIR/emergent6.3.2
 check_err $? "Impossible to create the fix installation directories."
 
+echo "# emergent 6.3.2" >> $BASHRC_PATH
 echo "export PATH=$FIX_INSTALL_DIR/emergent6.3.2:$PATH" >> $BASHRC_PATH
+echo "alias emergent=\"cd $FIX_INSTALL_DIR/emergent6.3.2; ./emergent\"" >> $BASHRC_PATH
 
 mv /usr/local/bin/emergent $FIX_INSTALL_DIR/emergent6.3.2
 check_err $? "Impossible to move the emergent binary file in the fix installation directory."
