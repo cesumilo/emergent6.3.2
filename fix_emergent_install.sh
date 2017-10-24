@@ -26,6 +26,7 @@ echo "export PATH=$FIX_INSTALL_DIR/emergent6.3.2:$PATH" >> $BASHRC_PATH
 mv /usr/local/bin/emergent $FIX_INSTALL_DIR/emergent6.3.2
 check_err $? "Impossible to move the emergent binary file in the fix installation directory."
 
+cd $FIX_INSTALL_DIR/emergent6.3.2
 cp -r /usr/local/Cellar/qt@4/4.8.7_2/Frameworks/* .
 check_err $? "Impossible to copy Qt4 frameworks in the fix installation directory."
 
