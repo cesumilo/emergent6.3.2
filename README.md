@@ -12,7 +12,7 @@ Run the following script to retrieve the right dependencies.
 ```
 ./install_emergent_6.3.2_deps.sh
 ```
-Several package will be launched and asking you to install it. Follow their instructions. Since you finished all the installations, install emergent.
+Several packages will be launched and asking you to install it. Follow their instructions. Since you finished all the installations, install emergent.
 
 ## 2. Install emergent
 Run the following command line and follow the instructions to install emergent 6.3.2.
