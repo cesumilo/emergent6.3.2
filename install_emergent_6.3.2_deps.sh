@@ -38,6 +38,9 @@ function openSHinDMG {
   /bin/sh "${DMG_SH}"
 }
 
+echo "Install pre-dependencies"
+brew install pkg-config cmake subversion mercurial libsndfile gsl ode
+
 echo "Install Qt4 and Qt4 WebKit..."
 brew tap cartr/qt4
 brew tap-pin cartr/qt4
