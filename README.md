@@ -26,7 +26,7 @@ Run the following command line and follow the instructions to install emergent 6
 ```
 
 ## 3. Install fix
-It will fix and add the binary to the PATH environment variable.
+It will fix and add the binary to the PATH environment variable. If you're not familiar with your terminal and you want to find out what is the `*rc` file: [click here](http://scriptingosx.com/2017/04/about-bash_profile-and-bashrc-on-macos/)
 ```
 ./fix_emergent_install.sh [bash/zsh/whatever]rc_filepath
 ```
