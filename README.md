@@ -4,6 +4,11 @@ Installation script for MacOS Sierra 10.12.6 to install emergent v6.3.2
 ## Motivation
 This script has been made to help University of Kent students installing emergent version 6.3.2 on MacOS in order to practice Cognitive Neural Network (CO836/636) classes at home.
 
+## Dependencies
+- [brew](https://brew.sh/)
+- [wget](http://brewformulas.org/Wget)
+- [ftp](http://www.techradar.com/how-to/software/operating-systems/how-to-use-ftp-through-the-command-line-in-mac-os-x-1305664)
+
 ## 0. Open a terminal
 I hope your are all familiar with your terminal. If it's not the case, ask to a computer science student to help you! ;)
 
